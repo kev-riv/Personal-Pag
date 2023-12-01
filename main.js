@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target.classList.remove('show');
             }
         });
-    }, { threshold: 0.5 }); // Adjust the threshold as needed
+    }, { threshold: 1 }); // Adjust the threshold as needed
 
     const targetElement = document.getElementById('fillingText');
     observer.observe(targetElement);

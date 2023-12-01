@@ -266,11 +266,6 @@ footer {
 
 @media only screen and (max-width: 800px) {
 
-        h1 {
-                width: 100%;
-        }
-
-
         nav a button {
                 font-size: 5vw;
         }
