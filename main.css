@@ -20,7 +20,8 @@ header {
         display: flex;
         align-content: center;
         justify-content: center;
-        margin: 5em;
+        margin-top: 5em;
+        margin-bottom: 5em;
         z-index: 0;
 }
 
@@ -29,7 +30,6 @@ header h1 {
         overflow: hidden;
         display: inline-block;
         opacity: 1; /* Set opacity to 1 by default */
-        border-radius: 10px;
         padding: 2em;
     }
     
@@ -264,9 +264,13 @@ footer {
 
 @media only screen and (max-width: 800px) {
 
+        h1 {
+                width: 100%;
+        }
+
 
         nav a button {
-                font-size: 10vw;
+                font-size: 5vw;
         }
 
         nav {
