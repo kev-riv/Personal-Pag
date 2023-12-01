@@ -54,11 +54,14 @@ nav button:hover {
 #cajadetexto {
         background-color: white ;
         color: black;
-        width: 70%;
+        width: 50%;
         resize: none;
         margin: auto;
         border: none;
         height: 120px;
+        border-radius: 10px;
+        padding: 1em;
+
         }
 
 form {
@@ -67,10 +70,20 @@ form {
         }
 
 #someter {
-        background-color: white ;
-        color: black; 
-        margin-bottom: 70px;
+        border-radius: 10px;
+        background-color: rgb(61, 77, 99);
+        color: white;
+        font-size: 0.8em;
+        font-weight:normal;
+        margin-bottom: 2em;
+        border-style: none;
+        padding: 0.5em;
         }
+
+
+#someter:hover, #file-btn-text:hover {
+        background-color: rgba(146, 149, 153, 0.628);
+}
 
 
 span input {
@@ -152,3 +165,25 @@ footer {
                 margin: 2em;
             }
 
+            #back-btn-container {
+                display: flex;
+                justify-content: flex-start;
+                text-decoration: none;
+            }
+
+        #back-btn {
+                cursor: pointer;
+                height: 50px;
+                width: 100px;
+                background-color: rgb(83, 92, 112);
+                border-style: none;
+                border-radius: 10px;
+                margin: 1em;
+                color: white;
+                font-weight: bold;
+                font-size: 1em;
+        }
+
+        #back-btn:hover {
+                background-color: rgba(83, 92, 112, 0.644);
+        }
