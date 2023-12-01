@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -9,60 +9,49 @@
     <script src='main.js'></script>
 </head>
 <body>
+
     <nav>
-        <a href=""><button>Home</button></a>
+        <a href="/"><button>Home</button></a>
         <a href="Pronto.html"> <button>Confesiones</button></a>
     </nav>
 
-    <div class="loader-wrapper">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Pantalla de carga con imagen -->
+    <!-- Loader with image -->
     <div id="loader-wrapper">
         <img id="loader-wrapper-img" src="images/CONFESIONES UPRB.png" alt="Loading...">
         <div id="loader"></div>
     </div>
 
+    <img id="header-img" src="images/CONFESIONES UPRB.png"/>
+
     <header> 
-
-        <img id="header-img" src="images/CONFESIONES UPRB.png"/>
-        <h1>Confesiones UPRB Reloaded</h1>
-
+        <h1 id="fillingText">Confesiones UPRB Reloaded</h1>
     </header>
-
 
     <form action="/submit-form" method="post" enctype="multipart/form-data" netlify>
         <textarea type="text" placeholder="Quiero confesar que..." name="respuesta" id="cajadetexto"></textarea>
 
         <div id="file-btn-container">
             <label class="btn-btn-default">
-                <span aria-hidden="true" id="file-btn-text" onclick="doFileUpload()">Subir imagen</span>
+                <span aria-hidden="true" id="file-btn-text" onclick="doFileUpload()">Subir imagenes 📸</span>
                 <input id="file-btn" type="file" name="imagenes" accept="image/png, image/jpeg" multiple onchange="updateFileText(this)"/>
             </label>
         </div>
         
         <span>
-            <div id="lol">
+            <div>
                 <input type="submit" id="someter"/>
             </div>
         </span>
     </form>
 
-
-    
-    
 </body>
 
-
 <footer>
-        <p id="confesionesuprb_reloaded">@confesionesuprb_reloaded</p>
-        <p id="MichiValentin">Con ❤️, Michi Valentin + Anastasio Valentin</p>
-    
-       <a href="https://www.facebook.com/ConfesionesReloaded"><img src="images/facebook.svg" id="FB"></a>
-       <a href="https://www.instagram.com/confesionesuprb_reloaded/"><img src="images/Instagram.svg" id="IG">
-       </a>
+    <p id="confesionesuprb_reloaded">@confesionesuprb_reloaded</p>
+    <p id="MichiValentin">Con 🩵, Michi Valentin + Anastasio Valentin</p>
+    <a href="https://www.facebook.com/ConfesionesReloaded"><img src="images/facebook.svg" id="FB"></a>
+    <a href="https://www.instagram.com/confesionesuprb_reloaded/"><img src="images/Instagram.svg" id="IG"></a>
+    <p>© 2023. Confesiones UPRB Team</p>
 </footer>
-
 
 </html>
