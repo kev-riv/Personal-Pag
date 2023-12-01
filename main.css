@@ -135,3 +135,20 @@ footer {
                 100% { transform: rotate(360deg); }
             }
 
+            #file-btn {
+                display: none;
+            }
+
+            #file-btn-text {
+                border-radius: 10px;
+                background-color: rgb(61, 77, 99);
+                color: white;
+                font-weight: bolder;
+                padding: 1em;
+
+            }
+
+            #file-btn-container {
+                margin: 2em;
+            }
+

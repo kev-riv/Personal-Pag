@@ -39,18 +39,23 @@
 
 
     <form action="/submit-form" method="post" enctype="multipart/form-data" netlify>
-        <textarea type="text" placeholder="TuRespuesta" name="respuesta" id="cajadetexto"></textarea>
-    
+        <textarea type="text" placeholder="Quiero confesar que..." name="respuesta" id="cajadetexto"></textarea>
+
+        <div id="file-btn-container">
+            <label class="btn-btn-default">
+                <span aria-hidden="true" id="file-btn-text" onclick="doFileUpload()">Subir imagen</span>
+                <input id="file-btn" type="file" name="imagenes" accept="image/png, image/jpeg" multiple onchange="updateFileText(this)"/>
+            </label>
+        </div>
+        
         <span>
             <div id="lol">
                 <input type="submit" id="someter"/>
             </div>
-    
-            <div>
-                <input type="file" name="imagenes" accept="image/png, image/jpeg" multiple/>
-            </div>
         </span>
     </form>
+
+
     
     
 </body>
