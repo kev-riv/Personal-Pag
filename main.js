@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("#loader").style.display = "none";
         document.querySelector("#loader-wrapper-img").style.display = "none";
         document.querySelector("#loader-wrapper").style.backgroundColor = "transparent";
+        document.querySelector("#loader-wrapper").remove();
     }, 2000);
     
 });
