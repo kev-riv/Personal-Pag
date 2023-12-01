@@ -71,7 +71,9 @@ nav {
         justify-content: flex-start;
         position: sticky;
         top: 0;
- }
+        z-index: 1000; /* Add this line */
+    }
+    
 
 nav button {
         background-color: black;
@@ -85,7 +87,6 @@ nav a {
         position: relative;
         display: inline-block;
         overflow: hidden;
-        z-index: 1000;
     }
 
     nav a button {
