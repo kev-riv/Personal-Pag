@@ -278,4 +278,8 @@ footer {
         nav {
                 flex-direction: column;
         }
+
+        footer {
+                font-size: 1em;
+        }
       }
