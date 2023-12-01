@@ -257,3 +257,9 @@ footer {
 #back-btn:hover {
         background-color: rgba(83, 92, 112, 0.644);
 }
+
+@media only screen and (max-width: 600px) {
+        .header-img {
+                margin-bottom: 20vw;
+        }
+      }
