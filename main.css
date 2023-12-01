@@ -121,6 +121,7 @@ nav a {
 
 nav button:hover {
         background-color: rgba(32, 184, 187, 0.535);
+        width: 100%;
         }
 
 #cajadetexto {
@@ -258,8 +259,14 @@ footer {
         background-color: rgba(83, 92, 112, 0.644);
 }
 
-@media only screen and (max-width: 600px) {
-        .header-img {
-                margin-bottom: 20vw;
+@media only screen and (max-width: 800px) {
+
+
+        nav a button {
+                font-size: 10vw;
+        }
+
+        nav {
+                flex-direction: column;
         }
       }
