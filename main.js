@@ -47,3 +47,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+function doFileUpload() {
+    document.getElementById("file-btn").click;
+}
+
+function updateFileText(input) {
+    var files = input.files;
+    var fileBtnText = document.getElementById("file-btn-text");
+
+    if (files.length > 0) {
+        fileBtnText.textContent = files.length === 1 ? files[0].name : files.length + " archivos seleccionados";
+    } else {
+        fileBtnText.textContent = "Subir imagenes";
+    }
+}
