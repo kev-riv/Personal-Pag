@@ -32,7 +32,8 @@
     </header>
 
 
-    <form action="/submit-form" method="post" enctype="multipart/form-data" netlify>
+    <form action="/submit-form" method="post" enctype="multipart/form-data"   data-netlify-recaptcha="true"
+    data-netlify="true" netlify>
         <textarea type="text" placeholder="Quiero confesar que..." name="respuesta" id="cajadetexto"></textarea>
 
         <div id="file-btn-container">
@@ -43,7 +44,7 @@
         </div>
         
         <span>
-            <div id="lol">
+            <div id="lol" data-netlify-recaptcha="true">
                 <input type="submit" id="someter"/>
             </div>
         </span>
