@@ -11,14 +11,16 @@ document.addEventListener("DOMContentLoaded", function() {
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom >= 0 &&
+            rect.left <= (window.innerWidth || document.documentElement.clientWidth) &&
+            rect.right >= 0
         );
     }
+    
 
     // Intersection Observer to add the 'show' class when the text is in the viewport
+
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             const target = entry.target;
@@ -28,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 target.classList.remove('show');
             }
         });
-    }, { threshold: 1 }); // Adjust the threshold as needed
+    }, { threshold: 0.8 }); // Adjust the threshold as needed
 
     const targetElement = document.getElementById('fillingText');
     observer.observe(targetElement);

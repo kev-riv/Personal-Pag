@@ -146,6 +146,7 @@ nav button:hover {
 form {
         display: flex;
         flex-direction: column;
+        justify-content: center;
 }
 
 #someter {
