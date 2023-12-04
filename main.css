@@ -149,6 +149,11 @@ form {
         justify-content: center;
 }
 
+.g-recaptcha {
+        display: flex;
+        justify-content: center;
+}
+
 #someter {
         border-radius: 10px;
         background-color: rgb(13, 130, 134);
